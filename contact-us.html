@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="contact-us.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="home2.css">-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>ContactaUs</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 81px; padding-bottom: 5px " >
+        <div class="container-fluid">
+            <!--      <a class="navbar-brand" href="#">Carousel</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div style="width: 600px;"></div>
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <div style="width: 30px"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="contact-us.html" style="padding-right: 2px">Contact Us</a>
+                    </li>
+                </ul>
+                <div style="width: 400px"></div>
+                <a href="home.html">
+                    <img src="logo/logo1.png" style="width: 100px;height: 36px" alt="photo1">
+                </a>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<div style="height: 90px"></div>
+<h2 style="color: yellow;text-align: center;" data-aos="fade-left">Our Location</h2>
+<div class="map">
+<iframe data-aos="fade-left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927795.1294965816!2d45.57387314297856!3d24.720022598845404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1687191981786!5m2!1sen!2seg"
+        width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div style="height: 50px"></div>
+
+<div class="login-box" data-aos="fade-bottom">
+    <h2>Contac Us</h2>
+    <form method="post"  onsubmit="sendmail()">
+        <div class="user-box">
+            <input type="text" id="name" name="" required="">
+            <label>Username</label>
+        </div>
+        <br>
+        <div class="user-box">
+            <input type="email" id="email" name="" required="">
+            <label>Email Address</label>
+        </div>
+        <br>
+        <div class="user-box">
+            <input  type="text" name="" id="message" required="">
+            <label>Message</label>
+        </div>
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+        </a>
+    </form>
+</div>
+<div style="height: 10px"></div>
+<p style="text-align: center;color: yellow;padding-bottom: 60px">© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendmail()
+    {
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "ahmed.sa.mns@gmail.com",
+            Password : "@AHM123456789@",
+
+            To : 'ahmed.sa.mns@gmail.com',
+            From : document.getElementById('email').value,
+            Subject : "This is the subject",
+            Body : "Name: "+document.getElementById("name").value
+                    +"<br> Email: "+document.getElementById("email").value
+                    +"<br> Message: "+document.getElementById("message").value
+        }).then(
+            message => alert("Message Sent Successfully")
+        );
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.citem
+{
+    height: 700px;
+    width: 100%;
+}
+.im
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*.Slides*/
+/*{*/
+/*    padding-top: 10px;*/
+/*    padding-right: 0px;padding-left: 0px;padding-bottom: 0px;*/
+/*}*/
+
+.dist:hover
+{
+    color: darkcyan;
+    transform: scale(1.1);
+}
+.support_img
+{
+    height: 250px;
+    width: 250px;
+    animation: 2s;
+}
+.quality_img
+{
+    height: 250px;
+    width: 250px;
+    animation: 1s;
+}
+.approach_img
+{
+    height: 250px;
+    width: 250px;
+    animation: 1s;
+}
+.brilliant_img
+{
+    height: 250px;
+    width: 250px;
+    animation: 1s;
+}
+
+.support_img:hover
+{
+  opacity: 30%;
+    transform: scale(1.1);
+    z-index: 3;
+    border-radius: 10px;
+
+}
+.brilliant_img:hover
+{
+    opacity: 30%;
+    transform: scale(1.1);
+    z-index: 3;
+    border-radius: 10px;
+
+}
+.quality_img:hover
+{
+    opacity: 30%;
+    transform: scale(1.1);
+    z-index: 3;
+    border-radius: 10px;
+
+}
+.approach_img:hover
+{
+    opacity: 30%;
+    transform: scale(1.1);
+    z-index: 3;
+    border-radius: 10px;
+
+}
+.supportHead:hover
+{
+    color: darkcyan;
+}
+.highQuality:hover
+{
+    color: darkcyan;
+}
+
+.about:hover
+{
+    color: darkcyan;
+}
